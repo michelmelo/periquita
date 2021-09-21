@@ -1,0 +1,59 @@
+{
+    "name": "michelmelo/periquita",
+    "description": "A set of open-source Blade components for the Laravel Framework",
+    "keywords": [
+        "blade-components",
+        "laravel",
+        "ui"
+    ],
+    "homepage": "https://michelmelo.github.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michel Melo",
+            "email": "eu@michelmelo.pt",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.0",
+        "jenssegers/agent": "^2.6",
+        "orchid/blade-icons": "1.3.2"
+    },
+    "conflict": {
+        "jenssegers/agent": "<2.6.4",
+        "orchestra/testbench-core": "<6.24.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "vimeo/psalm": "^4.8",
+        "orchestra/testbench-core": "^6.2",
+        "mockery/mockery": "^1.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MichelMelo\\UI\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MichelMelo\\UI\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "./vendor/bin/testbench package:test --parallel --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "MichelMelo\\UI\\PeriquitaServiceProvider"
+            ]
+        }
+    }
+}
