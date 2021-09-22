@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types=1);
+//declare(strict_types=1);
 
-namespace MichelMelo\UI\Components;
+namespace MichelMelo\Periquita\UI\Components;
 
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Arr;
@@ -17,13 +17,13 @@ class Alert extends Component
     public string $type;
 
     /**
-     * @var \Illuminate\Contracts\Session\Session
+     * @var Session
      */
-    protected $session;
+    protected Session $session;
 
     /**
-     * @param \Illuminate\Contracts\Session\Session $session
-     * @param string                                $type
+     * @param Session $session
+     * @param string $type
      */
     public function __construct(Session $session, string $type = 'alert')
     {
@@ -41,7 +41,7 @@ class Alert extends Component
      */
     public function message(): string
     {
-        return (string) Arr::first($this->messages());
+        return (string)Arr::first($this->messages());
     }
 
     /**
@@ -49,7 +49,7 @@ class Alert extends Component
      */
     public function messages(): array
     {
-        return (array) session()->get($this->type);
+        return (array)session()->get($this->type);
     }
 
     /**

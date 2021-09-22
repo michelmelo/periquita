@@ -1,7 +1,8 @@
 <?php
 
-namespace MichelMelo\UI\Components;
+namespace MichelMelo\Periquita\UI\Components;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Jenssegers\Agent\Agent;
 use Illuminate\Support\Collection;
@@ -21,7 +22,7 @@ class Device extends Component
     /**
      * Create a new component instance.
      *
-     * @param \Jenssegers\Agent\Agent $agent
+     * @param Agent $agent
      * @param false                   $desktop
      * @param false                   $phone
      * @param false                   $tablet
@@ -53,7 +54,7 @@ class Device extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return View|\Closure|string
      */
     public function render()
     {

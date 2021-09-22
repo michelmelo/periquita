@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MichelMelo\UI\Components;
+namespace MichelMelo\Periquita\UI\Components;
 
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
@@ -36,7 +36,7 @@ class Logout extends Component
     }
 
     /**
-     * @return \Illuminate\Contracts\View\View
+     * @return View
      */
     public function render(): View
     {

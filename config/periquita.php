@@ -1,6 +1,6 @@
 <?php
 
-use MichelMelo\UI\Components;
+use MichelMelo\Periquita\UI\Components;
 
 return [
 

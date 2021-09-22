@@ -2,22 +2,22 @@
 
 declare (strict_types = 1);
 
-namespace MichelMelo\UI\Components;
+namespace MichelMelo\Periquita\UI\Components;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class Meta extends Component
 {
-    public $title;
-    public $description;
-    public $author;
-    public $robots;
-    public $keywords;
-    public $type;
-    public $card;
-    public $image;
-    public $url;
+    public string $title;
+    public string $description;
+    public string $author;
+    public string $robots;
+    public string $keywords;
+    public string $type;
+    public string $card;
+    public string $image;
+    public string $url;
 
     /**
      * @param string $title

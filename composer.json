@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MichelMelo\\UI\\": "src"
+            "MichelMelo\\Periquita\\UI\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MichelMelo\\UI\\Tests\\": "tests"
+            "MichelMelo\\Periquita\\UI\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -52,7 +52,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "MichelMelo\\UI\\PeriquitaServiceProvider"
+              "MichelMelo\\Periquita\\UI\\PeriquitaServiceProvider"
             ]
         }
     }

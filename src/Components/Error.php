@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MichelMelo\UI\Components;
+namespace MichelMelo\Periquita\UI\Components;
 
 use Illuminate\Support\ViewErrorBag;
 use Illuminate\View\Component;
@@ -31,7 +31,7 @@ class Error extends Component
     }
 
     /**
-     * @return \Illuminate\Contracts\View\View
+     * @return View
      */
     public function render(): View
     {
@@ -39,7 +39,7 @@ class Error extends Component
     }
 
     /**
-     * @param \Illuminate\Support\ViewErrorBag $errors
+     * @param ViewErrorBag $errors
      *
      * @return array
      */
