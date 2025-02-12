@@ -22,9 +22,9 @@ Os seguintes pacotes são incluídos neste esqueleto:
 
 ## Instalação
 
-1. Clone o repositório:
+1. Instale o projeto usando o Composer:
    ```bash
-   git clone https://github.com/michelmelo/periquita.git
+   composer create-project michelmelo/periquita
    ```
 
 2. Acesse o diretório do projeto:
@@ -32,27 +32,22 @@ Os seguintes pacotes são incluídos neste esqueleto:
    cd periquita
    ```
 
-3. Instale as dependências:
-   ```bash
-   composer install
-   ```
-
-4. Copie o arquivo `.env.example` para `.env`:
+3. Copie o arquivo `.env.example` para `.env`:
    ```bash
    cp .env.example .env
    ```
 
-5. Gere a chave da aplicação:
+4. Gere a chave da aplicação:
    ```bash
    php artisan key:generate
    ```
 
-6. Configure o banco de dados no arquivo `.env` e execute as migrações:
+5. Configure o banco de dados no arquivo `.env` e execute as migrações:
    ```bash
    php artisan migrate --seed
    ```
 
-7. Inicie o servidor de desenvolvimento:
+6. Inicie o servidor de desenvolvimento:
    ```bash
    php artisan serve
    ```
